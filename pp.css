@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    text-shadow: 1px 2px 4px rgb(25, 11, 218);
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.what-we-do {
+    /* text-align: center; */
+    width: 80%;
+}
+.text .what-we-do{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+}
+/* body {
+    background-color: rgb(153, 153, 199);
+    border: 10px solid green;
+} */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one {
+    background-color: transparent;
+    /* width: 500px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+}
+.two {
+    background-color: white
+    ;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+.three {
+    background-color: white;
+}
+.four {
+    background-color: white;
+}
+.five {
+    background-color: rgb(235, 223, 223);
+}
+.six {
+    background-color: white;
+}
+.seven {
+    background-color: black;
+}
+.eight {
+    background-color: white;
+}
+.nine {
+    background-color: blue;
+}
+.images {
+    width: 300px;
+}
+span {
+    padding: 5px;
+}
+/* .lane2 {
+    display: flex;
+} */
+

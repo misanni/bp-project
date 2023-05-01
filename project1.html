@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/HTML/WEEK3/firstproject.html/project1.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="project1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <p id="dropdown"></p> 
+  <div class="all">
+    <header>
+        <a href="#" class="logo">DigitalM4</a>
+    
+    <div class="wrapper">
+        <!-- <a href="#mainnav" id="menuicon"><i>Menu</i></a> -->
+        <ul class="nav-area">
+            <li><a href="">HOME</a></li>
+            <li id="ld"><a href="#">LIVE DEMO <i class="ri-arrow-down-s-fill"></i></a>
+                <ul id="dropdown">
+                    <li><a href="">App Presentation</a></li>
+                    <li><a href="">Software Company</a></li>
+                    <li><a href="">Digital Startup</a></li>
+                </ul>
+            </li>
+        
+            <li id="list"><a href="#">LIVE DEMO BLOCKS <i class="ri-arrow-down-s-fill"></i></a>
+                <ul id="dropdown">
+                    <li><a href="">Headers/Title/Images/Content</a></li>
+                    <li><a href="">Features/Counters/Accordions/Map</a></li>
+                    <li><a href="">Tabs/Pricing/Progress/Clients/Footers</a></li>
+                    <li><a href="">Video/Team/Testimonials/Forms</a></li>
+                </ul>
+            </li>
+            <li class="btn"><a href="#">BUY NOW</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+       </header>
+  </div>
+  
+
+</nav>
+
+<script>
+    function displayMenu() {
+        if (document.getElementById('dropdown').style.display == 'block') {
+            document.getElementById('dropdown').style.display= 'none';
+        } else {
+            document.getElementById('dropdown').style.display= 'block';
+        }
+    }
+    document.getElementById('dropdown').addEventListener('click', displayMenu)
+
+    function resetMenu() {
+        if (window.innerWidth >= 900) {
+            document.getElementById('menuicon').style.display = 'flex';
+        } else if (window.innerWidth < 900) {
+            document.getElementById('menuicon').style.display = 'none';
+        }
+    }
+    window.addEventListener('resize', resetMenu);
+    </script>
+
+
+</body>
+</html>
